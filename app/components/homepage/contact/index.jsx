@@ -13,12 +13,12 @@ import ContactWithoutCaptcha from "./contact-without-captcha";
 function ContactSection() {
   return (
     <div id="contact" className="my-12 lg:my-16 relative mt-24 text-white">
-      <div className="flex justify-center -translate-y-[1px]">
+      <div className="mb-7 flex justify-center -translate-y-[1px]">
         <div className="w-3/4">
           <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
         </div>
       </div>
-      <div className="hidden lg:flex flex-col items-center absolute top-24 -right-8">
+      <div className=" hidden lg:flex flex-col items-center absolute top-24 -right-8">
         <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           CONTACT
         </span>
