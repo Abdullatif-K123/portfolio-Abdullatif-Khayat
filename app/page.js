@@ -1,3 +1,4 @@
+"use client";
 import { personalData } from "@/utils/data/personal-data";
 import AboutSection from "./components/homepage/about";
 import Blog from "./components/homepage/blog";
@@ -22,8 +23,8 @@ async function getData() {
   return filtered;
 };
 
-export default async function Home() {
-  const blogs = await getData();
+export default  function Home() {
+ 
 
   return (
     <>

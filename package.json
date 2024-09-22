@@ -21,7 +21,9 @@
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
-    "react-toastify": "^10.0.4"
+    "react-lottie": "^1.2.4",
+    "react-toastify": "^10.0.4",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "autoprefixer": "latest",
