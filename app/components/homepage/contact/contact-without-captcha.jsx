@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import emailjs from "emailjs-com";
 function ContactWithoutCaptcha() {
   const [error, setError] = useState({ email: false, required: false });
+  const [loading, setLoading] = useState(false);
   const [userInput, setUserInput] = useState({
     name: "",
     email: "",
@@ -34,9 +35,8 @@ function ContactWithoutCaptcha() {
     const serviceID = "service_4nq6dpl";
     const templateID = "template_nvxuxum";
     const options = { publicKey: "Il6IGP7TMWx0OMTqb" };
-    console.log(userInput.email, userInput.message, userInput.name);
     try {
-      console.log("hi");
+      setLoading(true);
       const res = await emailjs.send(
         serviceID,
         templateID,
@@ -45,6 +45,7 @@ function ContactWithoutCaptcha() {
       );
       if (res.status === 200) {
         toast.success("Message sent successfully!");
+        setLoading(false);
         setUserInput({
           name: "",
           email: "",
@@ -128,12 +129,17 @@ function ContactWithoutCaptcha() {
               </p>
             )}
             <button
-              className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
+              className={`flex  items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r ${
+                loading ? "from-gray-400" : "from-pink-500"
+              } ${
+                loading ? "to-gray-500" : "to-violet-600"
+              } px-5 md:px-12 py-2.5 md:py-3 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold`}
               role="button"
               onClick={handleSendMail}
+              disabled={loading}
             >
               <span>Send Message</span>
-              <TbMailForward className="mt-1" size={18} />
+              <TbMailForward size={18} />
             </button>
           </div>
         </div>
