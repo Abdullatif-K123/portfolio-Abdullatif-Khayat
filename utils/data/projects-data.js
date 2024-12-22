@@ -15,6 +15,16 @@ export const projectsData = [
     //     // image: crefin,
     // },
     {
+        id: 1,
+        name: 'Safrabinkra App',
+        description: 'SafraBinkra app is is an application that allows users to book travel trips between all Syrian governorates with ease and speed. The app aims to save users time and effort by displaying all available branches and trips, making it easier for them to select and book the most suitable journey for themselves or their family members and the app got overe 100 thausands users .',
+        tools: ['Reactjs', 'Tailwind CSS', "Material UI", "TypeScript" ],
+        role: 'Frontend developer',
+        code: '#',
+        demo: 'https://safra-binakra.com/',
+        image: "/image/safrabinkra.png",
+    },
+    {
         id: 2,
         name: 'Travel Agency App',
         description: 'I have designed and developed a full-stack web app for 2Expedition, a travel agency in Armenia. I created the UI using NextJS, Typescript, MUI, TailwindCSS, Google Maps, Sun-Editor, and React Slick. The app supports multiple languages and currencies. I developed the API using NestJS, Typescript, MySQL, TypeORM, AWS, and Nodemailer. I deployed the front-end app to AWS Amplify and the back-end app to AWS EC2.',
