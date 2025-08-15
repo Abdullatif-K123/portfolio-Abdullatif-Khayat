@@ -11,7 +11,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Abdullatif Khayat- Software Developer",
+  title: "Abdullatif Khayat- Software Developer",
   description:
     "This is the portfolio of Abdullatif Khayat. I am a Frontend developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
 };
@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <Head>
+      <Head>
         <link rel="icon" href="/image/laptop.png" />
       </Head>
       <body className={inter.className}>

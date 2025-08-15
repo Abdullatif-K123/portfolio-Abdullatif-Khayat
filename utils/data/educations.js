@@ -16,5 +16,5 @@ export const educations = [
     title: "Higher school Certificate",
     duration: "2017 - 2018",
     institution: "Aleppo School",
-  }
-]
+  },
+];
