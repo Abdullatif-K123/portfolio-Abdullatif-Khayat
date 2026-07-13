@@ -12,5 +12,5 @@ export const personalData = {
   twitter: 'https://twitter.com/Abdullatif7388',
   stackOverflow: '#',
   leetcode: "https://leetcode.com/said3812/", 
-  resume: "https://drive.google.com/file/d/1p81rxd8fK8PQ4MPrE2Jnk6Eu2QLEN3lS/view?usp=drive_link"
+  resume: "/Abdullatif_KhayatCV.pdf"
 }
